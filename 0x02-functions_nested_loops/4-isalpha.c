@@ -6,7 +6,7 @@
  * Return: 1 if char 0 if else
  */
 
-int _isalpha(int c)
+int _isalpha(int C)
 {
 	if ((C >= 'A' && C <= 'Z') || (C >= 'a' && C <='z'))
 		return (1);
