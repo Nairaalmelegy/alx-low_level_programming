@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-
+/* main - entry point */
 /* betty style doc for function main goes there */
 /*Return:0 Always (success)*/
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("%d is %s\n", n, "Positive");
+		printf("%d is %s\n", n, "positive");
 	}
 	else if (n < 0)
 	{
