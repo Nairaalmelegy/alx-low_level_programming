@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main - Entry point of the program to demonstrate the use of random numbers and printing the last digit.
+ * main - Entry point of the program to get and printing the last digit
  *
  * Return: 0 Always (success)
  */
