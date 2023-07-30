@@ -3,7 +3,7 @@
 #include <stdio.h>
 /*
  * main - entry function to get the last number
- * @s: variable for the reminder
+ * @s: variable for the remainder
  *
  * Return: 0 Always (success)
  */
@@ -21,7 +21,7 @@ int main(void)
 	{
 		printf("and is greater than 5");
 	}
-	else if (s > 6 && s != 0)
+	else if (s < 6 && s != 0)
 	{
 		printf("and is less than 6 and not 0");
 	}
