@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-/* main - entry point */
-/* betty style doc for function main goes there */
-/*Return:0 Always (success)*/
+/**
+ * main - Determine if a random number is positive, negative or zero.
+ *
+ * Return: 0 on success
+ */
 int main(void)
 {
 	int n;
