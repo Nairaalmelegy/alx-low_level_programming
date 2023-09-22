@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_rev - function that prints a string in reverse form foollowed by 
- * a new line
- * @s: char address
+ * print_rev - a function that takes a pointer to an int as parameter and
+ * @s: chaine of caractere
  *
  * Return: 1 or 0
  */
