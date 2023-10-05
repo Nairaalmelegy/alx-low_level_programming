@@ -8,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-	char arr;
+	char *arr;
 	int i, length = 0;
 	if (str == 0)
 		return (NULL);
