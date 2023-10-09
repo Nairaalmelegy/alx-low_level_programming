@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * malloc_checked - to allocate the memory using malloc
+ * *malloc_checked - to allocate the memory using malloc
  * @b: the variable address
  *
  * Return: pointer to arrsy or NULL
