@@ -25,14 +25,17 @@ list_t *add_node_end(list_t **head, const char *str)
     }
     new->len = charnumber;
     new->next = NULL;
-    tempor = *head;
 
+    tempor = *head;
     if (tempor == NULL)
+    {
         *head = new;
+    }
     else
     {
         while (tempor->next != NULL)
             tempor = tempor->next;
+
         tempor->next = new;
     }
 
