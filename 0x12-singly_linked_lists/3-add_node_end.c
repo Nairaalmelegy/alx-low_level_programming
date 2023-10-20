@@ -21,10 +21,10 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	for (charnumber = 0; ; charnumber++)
 	{
-        if (str[charnumber] == '\0')
-        {
-            break;
-        }
+		if (str[charnumber] == '\0')
+	{
+		break;
+	}
 	}
 	new->len = charnumber;
 	new->next = NULL;
