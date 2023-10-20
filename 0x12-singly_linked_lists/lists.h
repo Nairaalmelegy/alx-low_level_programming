@@ -1,14 +1,9 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-/*
- * File: lists.h
- * Author: Naira almelegy
- * Description: Header file containing prototypes and definitions for all functions
- *       and types written in the 0x12-singly_linked_lists directory.
- */
-
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * struct list_s - singly linked list
