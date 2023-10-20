@@ -1,20 +1,27 @@
 #ifndef LISTS_H
 #define LISTS_H
+
+/**
+ * File: lists.h
+ * Author: Naira almelegy
+ * Description: header file that containsall needed prototypes
+ */
 #include <stdlib.h>
 /**
- * struct list_single_list - singly linked list
- * @str: string
- * @nodelen: string length
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
  * @next: points to the next node
  *
- * Description: structure for single node
+ * Description: singly linked list node structure
  */
-typedef struct list_single_list
+typedef struct list_s
 {
-	char *str;
-	unsigned int nodelen;
-	struct list_single_list *next;
+    char *str;
+    unsigned int len;
+    struct list_s *next;
 } list_t;
+
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
