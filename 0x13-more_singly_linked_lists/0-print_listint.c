@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
+
 /**
  * print_listint - print the contint of h list
  * @h: begining of list
@@ -8,13 +8,14 @@
  */
 size_t print_listint(const listint_t *h)
 {
+	const listint_t *ptr = h;
 	size_t nodenum = 0;
 
-	while (h != NULL)
+	while (ptr != NULL)
 	{
-		nodenum++;
-		printf("%d\n", h->n);
-		h = h->next;
+		nodenum += 1;
+		printf("%d\n", ptr->n);
+		ptr = ptr->next;
 	}
 	return (nodenum);
 }
