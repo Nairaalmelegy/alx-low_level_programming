@@ -9,13 +9,13 @@
 size_t print_listint(const listint_t *h)
 {
 	const listint_t *ptr = h;
-	size_t nodenum = 0;
-	
+	size_t count = 0;
+
 	while (ptr != NULL)
 	{
-		nodenum += 1;
 		printf("%d\n", ptr->n);
+		count += 1;
 		ptr = ptr->next;
 	}
-	return (nodenum);
+	return (count);
 }
