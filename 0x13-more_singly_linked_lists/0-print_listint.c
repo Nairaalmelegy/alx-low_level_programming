@@ -1,9 +1,10 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_listint - print the contint of h list
  * @h: begining of list
  *
- * Return: nodes number
+ * Return: the number of nodes
  */
 size_t print_listint(const listint_t *h)
 {
