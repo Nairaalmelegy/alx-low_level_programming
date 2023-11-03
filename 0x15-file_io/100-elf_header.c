@@ -27,18 +27,20 @@ void print_field(const char *name, unsigned char value)
 
 int main(int argc, char *argv[])
 {
+	int fd;
+	Elf64_Ehdr header;
+
 	if (argc != 2) {
 		fprintf(stderr, "Usage: %s <ELF file>\n", argv[0]);
 		return 1;
 	}
 
-	int fd = open(argv[1], O_RDONLY);
+	fd = open(argv[1], O_RDONLY);
 	if (fd == -1) {
 		fprintf(stderr, "Error: Can't read file %s\n", argv[1]);
 		return 98;
 	}
 
-	Elf64_Ehdr header;
 	if (read(fd, &header, sizeof(Elf64_Ehdr)) != sizeof(Elf64_Ehdr)) {
 		fprintf(stderr, "Error: Can't read ELF header from file %s\n", argv[1]);
 		close(fd);
